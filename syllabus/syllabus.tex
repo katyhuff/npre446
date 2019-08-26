@@ -1,4 +1,4 @@
-\documentclass[11pt, a4paper]{article}
+\documentclass[11pt]{article}
 \usepackage[inner=1in,outer=1in,top=1in,bottom=1in]{geometry}
 \pagestyle{empty}
 \usepackage{placeins}
@@ -10,7 +10,7 @@
 \definecolor{darkred}{rgb}{.7,0,0}
 \definecolor{darkgreen}{rgb}{0,.6,0}
 \definecolor{red}{rgb}{.98,0,0}
-\usepackage[colorlinks,pagebackref,pdfusetitle,urlcolor=darkblue,citecolor=darkblue,linkcolor=darkred,bookmarksnumbered,plainpages=false]{hyperref}
+\usepackage[colorlinks,pdfusetitle,urlcolor=darkblue,citecolor=darkblue,linkcolor=darkred,bookmarksnumbered,plainpages=false]{hyperref}
 %\renewcommand{\thefootnote}{\fnsymbol{footnote}}
 
 \pagestyle{fancyplain}
@@ -27,26 +27,27 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{xspace}
 
-\newcommand{\CourseNumber}{NPRENNN}
-\newcommand{\CourseTitle}{Course Title\xspace}%
+\newcommand{\CourseNumber}{NPRE446}
+\newcommand{\CourseTitle}{Radiation Interactions With Matter I\xspace}%
 \newcommand{\CourseInstructor}{Prof. Kathryn Huff\xspace}%
 \newcommand{\CourseSemester}{Fall\xspace}%
-\newcommand{\CourseYear}{2016\xspace}%
+\newcommand{\CourseYear}{2019\xspace}%
 \newcommand{\CourseDays}{MWF\xspace}%
-\newcommand{\CourseStart}{10:00\xspace}%
-\newcommand{\CourseEnd}{11:30\xspace}%
+\newcommand{\CourseStart}{9:00\xspace}%
+\newcommand{\CourseEnd}{10:00\xspace}%
 \newcommand{\CourseInstructorEmail}{kdhuff@illinois.edu}
-\newcommand{\CourseRoom}{104\xspace}%
-\newcommand{\CourseBuilding}{Talbot Laboratory\xspace}%
+\newcommand{\CourseRoom}{305\xspace}%
+\newcommand{\CourseBuilding}{Materials Science\xspace}%
 \newcommand{\CourseUniversity}{University of Illinois, Urbana-Champaign\xspace}%
-\newcommand{\TeachingAssistant}{Firstname Lastname\xspace}%
-\newcommand{\TAOfficeHourDays}{Wednesdays\xspace}%
-\newcommand{\TAOfficeHourStart}{1:00pm\xspace}%
-\newcommand{\TAOfficeHourEnd}{3:00pm\xspace}%
-\newcommand{\TAOfficeHourPlace}{123 Talbot Laboratory\xspace}
-\newcommand{\HuffOfficeHourDays}{Fridays\xspace}%
-\newcommand{\HuffOfficeHourStart}{3:00pm\xspace}%
-\newcommand{\HuffOfficeHourEnd}{5:00pm\xspace}%
+\newcommand{\TeachingAssistant}{Natalie Gaughan\xspace}%
+\newcommand{\TAOfficeHourDays}{TBD\xspace}%
+\newcommand{\TAEmail}{ncg5@illinois.edu}%
+\newcommand{\TAOfficeHourStart}{TBD\xspace}%
+\newcommand{\TAOfficeHourEnd}{TBD\xspace}%
+\newcommand{\TAOfficeHourPlace}{TBD Talbot Laboratory\xspace}
+%\newcommand{\HuffOfficeHourDays}{Fridays\xspace}%
+%\newcommand{\HuffOfficeHourStart}{3:00pm\xspace}%
+%\newcommand{\HuffOfficeHourEnd}{5:00pm\xspace}%
 \newcommand{\HuffOfficeHourPlace}{118 Talbot Laboratory, 104 S. Wright St.\xspace}
 %\newcommand{\Course<++>}{<++>}
 %\newcommand{\Course<++>}{<++>}
@@ -64,6 +65,8 @@
 \hline
 \textbf{Instructor:} & \CourseInstructor & \textbf{Time:} & \CourseDays \CourseStart -- \CourseEnd \\
 \textbf{Email:} &  \href{mailto:\CourseInstructorEmail}{\CourseInstructorEmail} & \textbf{Place:} & \CourseRoom \CourseBuilding\\
+\textbf{Teaching Assistant} & \TeachingAssistant & & \\
+\textbf{Email:} &  \href{mailto:\TAEmail}{\TAEmail} & & \\
 \hline
 \end{tabularx}
 \end{table}
@@ -72,42 +75,97 @@
 \paragraph{Course Pages:}
 \begin{enumerate}
         \item \url{https://compass2g.illinois.edu}
-        \item \url{https://github.com/katyhuff/\CourseNumber}
-        \item \url{https://piazza.com/illinois/fall2016/\CourseNumber/home}
+        \item \url{https://github.com/katyhuff/npre446}
+        \item \url{https://katyhuff.youcanbook.me}
 \end{enumerate}
 
 \paragraph{TA Office Hours:} The teaching assistant for the course, 
 \TeachingAssistant, will hold office hours \TAOfficeHourDays from 
 \TAOfficeHourStart to \TAOfficeHourEnd in \TAOfficeHourPlace.
 
-\paragraph{Office Hours:} Prof. Huff will hold office hours on 
-\HuffOfficeHourDays from \HuffOfficeHourStart to \HuffOfficeHourEnd in \HuffOfficeHourPlace.
-If you have an individual issue, please make an appointment. If your colleagues 
-might be helpful, please post your questions in the forum provided for this 
-purpose online rather than attending office hours.
+\paragraph{Office Hours:} Prof. Huff will hold office hours by appointment 
+only, in her office, \HuffOfficeHourPlace. Please make use of the teaching 
+assistant and your colleagues before booking an appointment with Prof. Huff. 
+You can make  an appointment at \url{katyhuff.youcanbook.me}.
 
 \paragraph{Main References:}
 A few essential references for this course will be assigned as readings. The 
-recommended text for this course is \cite{rec_text}.
+required texts for this course are \cite{griffiths_introduction_2004} and 
+\cite{yip_nuclear_2014}. The more recent \cite{griffiths_introduction_2018} is not 
+required, but can be used instead of the second edition. Additional,a
+recommended texts include \cite{krane_introductory_1987,eisberg_quantum_1985,evans_atomic_1955}.
 \bibliographystyle{unsrt}
 \renewcommand{\refname}{\normalfont\selectfont\normalsize}\vspace{-1cm} 
 \bibliography{bibliography}
 
+\paragraph{Description:}
+The classical and quantum theories of the interaction of radiation (neutrons, photons, and
+charged particles) with matter are the core components of nuclear and materials science
+and engineering. At UIUC, we offer a sequence of four courses (446, 447, 521, and 529)
+at progressively deepening levels on this subject. The sequence, in the aggregate, aims to
+provide the students with solid training in essential physical principles, mathematical
+competence, and computational skills. In this course, we provide a quantitative
+introduction to introductory quantum mechanics, fundamentals of atomic and nuclear
+physics, and interactions of radiation with matter.
+
 \paragraph{Objectives:} 
 
-This course will equip students to:
+\paragraph{The quantum physics elements of this course will equip students to}
 
 \begin{itemize}
-\item <+objective+>
-\item <+objective+>
-\item <+objective+>
+        \item Recognize the limitations of classical theory  (stable atomic 
+                model, black-body radiation, the photoelectric effect, and 
+                Compton scattering).
+        \item Apply classical theory to fundamental problems.
+        \item Explain the implications of wave-particle duality.
+        \item Apply operators in physical equations.
+        \item Solve the Schr\"odinger equation for canonical problems.
+        \item Understand and apply fundamental concepts (eigenstates, 
+                observables, statistical interpretation, probability 
+                conservation, bound/unbound states).
+        \item Identify the bound and unbound states in key potentials: square
+potential, Harmonic oscillator, ladder operators, free particle, $\delta$ 
+                potential.
+        \item Define, derive, and apply the uncertainty principle.
+\end{itemize}
+
+\paragraph{The atomic and nuclear physics elements of this course will equip students to:}
+\begin{itemize}
+        \item Fundamentally describe atomic structure and nuclear properties. 
+        \item Understand and use nuclear physics terminology.
+        \item Differentiate nuclei and interactions via their size, 
+                distributions of charge and mass, abundance, and binding energy.
+        \item Identify and calculate nuclear phenomena via Q-value, separation energy, semi-empirical
+mass formula, liquid drop model, mass parabola, spin, parity, electromagnetic moments), nuclear force and
+nuclear structure.
+                \item Define and apply the properties of nuclear forces, deuteron structure, neutron-proton scattering, phase shift,
+partial wave approximation, scattering length, differential cross section, exchange force model, nuclear
+shell model, nuclear magic numbers.
+                \item Model and solve equations related to radioactive decay 
+                        and binary nuclear reactions.
+\end{itemize}
+
+\paragraph{The interaction of radiation with matter portion of this course will equip 
+students to:} 
+\begin{itemize}
+        \item Categorize and characterize neutron interations with matter. 
+        \item Identify and quantify neutron-proton scattering, energy 
+                dependence of cross sections, and moderation.
+        \item Categorize and characterize gamma interactions with matter.
+        \item Identify and quantify gamma attenuation, the photoelectric 
+                effect, Compton scattering, pair production.
+        \item Categorize and characterize heavy and light charged particle 
+                interactions with matter.
+        \item Identify and calculate the features of charged particle stopping 
+                power, Bragg curve, range, ionization loss, and radiation loss.
 \end{itemize}
 
 \paragraph{Prerequisites:} 
 \begin{itemize}
-\item <+standing+> standing is required.
-\item <+required courses+>
-\item <+other+>
+        \item Junior standing is recommended.
+        \item MATH 285
+        \item PHYS 211 - 214, or equivalent.
+        \item Linear Algebra (MATH 125) is not required, but highly recommended.
 \end{itemize}
 
 \paragraph{Grading Policy:} Grades will be assigned as a weighted sum of the following work. 
@@ -116,22 +174,24 @@ This course will equip students to:
 \begin{tabularx}{\textwidth}{Xr}
 \textbf{Work} & \textbf{Weight}\\
 \hline
-\textbf{<+item+>} & (<+percent+>\%) \\
-\textbf{<+item+>} & (<+percent+>\%) \\
-\textbf{<+item+>} & (<+percent+>\%) \\
-\textbf{<+item+>} & (<+percent+>\%) \\
+\textbf{Homework} & (35\%) \\
+\textbf{Quizzes} & (5\%) \\
+\textbf{Midterm 1} & (15\%) \\
+\textbf{Midterm 2} & (15\%) \\
+\textbf{Final} & (30\%) \\
 \hline
-\textbf{Total} & (<+percent+>\%) \\
+\textbf{Total} & (100\%) \\
 \end{tabularx}
 \end{table}
 
 \paragraph{Important Dates:}
+
+The following dates are subject to change.
 \begin{center} \begin{minipage}{3.8in}
 \begin{flushleft}
-Midterm \#1      \dotfill Month Date, Year, Time  \\
-Midterm \#2      \dotfill Month Date, Year, Time  \\
-Project Deadline      \dotfill Month Date, Year, Time  \\
-Final Exam      \dotfill Month Date, Year, Time  \\
+Midterm \#1      \dotfill September 25, 2019, 9:00am-10:00am\\
+Midterm \#2      \dotfill November 6, 2019, 9:00am-10:00am  \\
+Final Exam      \dotfill December 18, 2019, 1:30pm-4:00pm\\
 \end{flushleft}
 \end{minipage}
 \end{center}
@@ -146,13 +206,22 @@ undermining its integrity. Note the
 Quick Reference Guide to Academic Integrity} and the
 \href{http://studentcode.illinois.edu/article1_part4_1-401.html}{Academic
 Integrity Policy and Procedure}.  
-\item[] \textbf{Attendance:} Regular attendance is mandatory. Request approval for absence for extenuating circumstances prior to absence.
+\item[] \textbf{Attendance:} Regular attendance is mandatory. Request approval 
+        for absence for extenuating circumstances prior to absence.
 \item[] \textbf{Electronics:} Active participation is essential and expected. 
         Accordingly, students must turn off all electronic devices (laptop, 
         tablets, cellphones, etc.) during class. Exceptions may be granted for 
         laptops if engaging in computational exercises or taking notes. 
-\item[] \textbf{Collaboration:} Collaboratively reviewing course materials and studying for exams with fellow students can be enriching.  This is recommended.  However, unless otherwise instructed, homework assignments are to be completed independently and materials submitted as homework should be the result of one's own independent work.
-\item[] \textbf{Late Work:} Late work has a halflife of 1 hour. That is, adjusted for lateness, your grade $G(t)$ is a decaying percentage of the raw grade $G_0$. An assignment turned in $t$ hours late will receive a grade according to the following relation:
+\item[] \textbf{Collaboration:} Collaboratively reviewing course materials and 
+        studying for exams with fellow students can be enriching.  This is 
+                recommended.  However, unless otherwise instructed, homework 
+                assignments are to be completed independently and materials 
+                submitted as homework should be the result of one's own 
+                independent work.
+\item[] \textbf{Late Work:} Late work has a halflife of 1 hour. That is, 
+        adjusted for lateness, your grade $G(t)$ is a decaying percentage of 
+                the raw grade $G_0$. An assignment turned in $t$ hours late 
+                will receive a grade according to the following relation:
 \begin{align*}
         G(t) &= G_0e^{-\lambda t}
         \intertext{where}
@@ -162,7 +231,21 @@ Integrity Policy and Procedure}.
         t &= \mbox{time elapsed since due [hours]}\\
         t_{1/2} &= 1 = \mbox{half-life [hours]} \\
 \end{align*}
-\item[] \textbf{Make-up Work:} There will be no negotiation about late work except in the case of absence documented by an absence letter from the Dean of Students.  The university policy for requesting such a letter is in \href{http://studentcode.illinois.edu/article1_part5_1-501.html}{the Student Code}. Please note that such a letter is appropriate for many types of conflicts, but that religious conflicts require special early handling. In accordance with university policy, students seeking an excused absence for religious reasons should complete the Request for Accommodation for Religious Observances Form, which can be found on the Office of the Dean of Students website. The student should submit this form to the instructor and the Office of the Dean of Students by the end of the second week of the course to which it applies. 
+\item[] \textbf{Make-up Work:} There will be no negotiation about late work 
+        except in the case of absence documented by an absence letter from the 
+                Dean of Students.  The university policy for requesting such a 
+                letter is in 
+                \href{http://studentcode.illinois.edu/article1_part5_1-501.html}{the 
+                Student Code}. Please note that such a letter is appropriate 
+                for many types of conflicts, but that religious conflicts 
+                require special early handling. In accordance with university 
+                policy, students seeking an excused absence for religious 
+                reasons should complete the Request for Accommodation for 
+                Religious Observances Form, which can be found on the Office of 
+                the Dean of Students website. The student should submit this 
+                form to the instructor and the Office of the Dean of Students 
+                by the end of the second week of the course to which it 
+                applies. 
 
 \end{itemize}
 
@@ -187,9 +270,85 @@ soon as they can be of help.
 \begin{itemize}
 \item \href{https://campusrec.illinois.edu/}{The Campus Recreational Centers}
 \item \href{http://counselingcenter.illinois.edu/}{The Counselling Center}
-\item \href{http://www.mckinley.illinois.edu/clinics/mental\_health.htm}{The McKinley Mental Health Clinic}
-\item \href{http://odos.illinois.edu/emergency/}{The Emergency Dean}
+\item \href{https://mckinley.illinois.edu/}{The McKinley Health Clinic}
+\item \href{http://www.mckinley.illinois.edu/medical-services/mental-health}{The McKinley Mental Health Clinic}
+\item \href{https://odos.illinois.edu/community-of-care/emergency-dean/}{The Emergency Dean}
 \end{itemize}
+
+
+\paragraph{Run. Hide. Fight.}
+It is important that we take time to prepare for a situation in which our 
+safety could depend on our ability to react quickly. Please review the 
+university guidance on responding to emergency situations 
+\url{https://police.illinois.edu/emergency-preparedness/run-hide-fight/}.
+
+
+
+\pagebreak
+\FloatBarrier
+\renewcommand{\arraystretch}{1}
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{lllcllll}
+\multicolumn{8}{c}{\textbf{Course Schedule:}\textit{ This schedule is subject to change}}\\
+&&&&&&&\\
+\textbf{Date} & \textbf{Week} & \textbf{Day} & \textbf{Unit} & \textbf{Chap.} & \textbf{Quiz} & \textbf{HW} & \textbf{HW}\\
+ &  &  &  &  &                                                                  \textbf{Due}  & \textbf{Given} & \textbf{Due}\\
+\hline
+\hline
+08-26 & 1 & M & Intro & G1 &  &  & \\
+08-28 & 1 & W & Wave Function & G1 &  &  & \\
+08-30 & 1 & F & Wave Function & G1 &  & HW1 & \\
+09-02 & 2 & M & \textbullet~\textbf{No Class} \textbullet & Q1 &  &  & \\
+09-04 & 2 & W & Wave Function & G1 &  &     &    \\
+09-06 & 2 & F & Wave Function & G1 &  &     &    \\
+09-09 & 3 & M & Wave Function & G1 & Q2 &  & \\
+09-11 & 3 & W & Time-Independent Schr\"odinger & G2 &  &  & \\
+09-13 & 3 & F & Time-Independent Schr\"odinger  & G2 &  & HW2 & HW1\\
+09-16 & 4 & M & Time-Independent Schr\"odinger  & G2 & Q3 &  & \\
+09-18 & 4 & W & Time-Independent Schr\"odinger & G2 &  &  & \\
+09-20 & 4 & F & Time-Independent Schr\"odinger  & G2 &  &  & \\
+09-23 & 5 & M & Review & G3 & Q4 &  & \\
+09-25 & 5 & W & \textbullet~\textbf{Midterm} \textbullet  &  &  &  & \\
+09-27 & 5 & F & Formalism & Y3 &  & HW3 & HW2\\
+09-30 & 6 & M & Nuclear Properties & Y3 & Q5 &  & \\
+10-02 & 6 & W & Nuclear Properties & Y3 &  &  & \\
+10-04 & 6 & F & Nuclear Properties& Y4 &  & HW4 & HW3\\
+10-07 & 7 & W & Nuclear Properties & Y4 & Q6 &  & \\
+10-09 & 7 & W & Stability of Nuclei & Y4 &  &  & \\
+10-11 & 7 & F & Stability of Nuclei & Y5 &  & HW5 & HW4\\
+10-14 & 8 & M & Energy Level Models & Y5 & Q7 &  & \\
+10-16 & 8 & W & Energy Level Models & Y5 &  &  & \\
+10-18 & 8 & F & Nuclear Decay & Y6 &  & HW8 & HW7\\
+10-21 & 9 & M & Collision Cross Sections & Y7 & Q8 &  & \\
+10-23 & 9 & W & Collision Cross Sections & 7 &  &  & \\
+10-25 & 9 & F & Collision Cross Sections & 7 &  & HW9 & HW8\\
+10-28 & 10 & M & Collision Cross Sections & & Q9 &  & \\
+10-30 & 10 & W & Collision Cross Sections & 7 &  &  & \\
+11-01 & 10 & F & Neutron Scattering & 7 & & HW10 & HW9\\
+11-04 & 11 & M & Neutron Scattering & 9 & Q10 &  & \\
+11-06 & 11 & W & Review & 9 & &  & \\
+11-08 & 11 & F & \textbullet~\textbf{Midterm} \textbullet & 9 & & HW11 & HW10\\
+11-11 & 12 & M & Neutron Scattering & 9 & Q11 &  & \\
+11-13 & 12 & W & Neutron Scattering  & 9 & &  & \\
+11-15 & 12 & F & $\gamma$ Scattering \& Absorption & 9 & & HW12 & HW11\\
+11-18 & 13 & M & $\gamma$ Scattering \& Absorption &  &  &  & \\
+11-20 & 13 & W & $\gamma$ Scattering \& Absorption &  &  &  & \\
+11-22 & 13 & F & $\gamma$ Scattering \& Absorption &  &  &  & \\
+11-25 & 14 & M & \textbullet~\textbf{No Class} \textbullet & 10 & Q12 &  & \\
+11-27 & 14 & W & \textbullet~\textbf{No Class} \textbullet  &  10 &    &  & \\
+11-29 & 14 & F & \textbullet~\textbf{No Class} \textbullet & 11 &  & HW13 & HW12\\
+12-02 & 15 & M & Charged Particle Stopping & 12 & Q13 &  & \\
+12-04 & 15 & W & Charged Particle Stopping & 12 &  &  & \\
+12-06 & 15 & F & Charged Particle Stopping & 12 &  &  & HW13\\
+12-09 & 16 & M & Charged Particle Stopping & 12 &  &  & \\
+12-11 & 16 & W & Review &  &  &  & \\
+12-18 & 17 & W & \textbullet~\textbf{Final Exam} \textbullet &  &  &  & \\
+\end{tabular}
+\end{center}
+\end{table}
+\FloatBarrier
+
 
 \pagebreak
 \FloatBarrier
